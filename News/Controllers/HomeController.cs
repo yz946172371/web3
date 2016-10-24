@@ -42,16 +42,19 @@ namespace News.Controllers
         /// 新闻列表
         /// </summary>
         /// <returns></returns>
-        public ActionResult List()
+        public ActionResult List(int page=10)
         {
-            string[] data= new string[] { "台风逼近广西景区关闭学校停课",
-                "广西每年入境游客超300万" ,
-                "空军招飞初选10月24日开始",
-                "柳州城市轨道交通勘探工作已展开"};
+            string[] data= new string[] { "NBA-詹皇里程碑之夜骑士胜奇才
+超科比！",
+                "科比自曝仍坚持凌晨4点起床" ,
+                "追梦:没有球队能给我们带来挑战",
+                "试传祺旗舰GS8：想当最强自主SUV"};
 
-            //ViewBag.data = data;
+            ViewBag.data = data;
+            ViewBag.Page = page;
+
             //ViewData["data"] = data;
-            ViewData.Model = data;
+            //ViewData.Model = data;
             return View();
         }
 
@@ -59,6 +62,26 @@ namespace News.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        /// <summary>
+        /// 添加新闻
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 保存新闻内容
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Save(string title, string content)
+        {
+            ViewBag.Title = title;
+            ViewBag.Content = content;
             return View();
         }
     }
