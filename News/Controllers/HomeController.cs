@@ -44,8 +44,7 @@ namespace News.Controllers
         /// <returns></returns>
         public ActionResult List(int page=10)
         {
-            string[] data= new string[] { "NBA-詹皇里程碑之夜骑士胜奇才
-超科比！",
+            string[] data= new string[] { "NBA-詹皇里程碑之夜骑士胜奇才",
                 "科比自曝仍坚持凌晨4点起床" ,
                 "追梦:没有球队能给我们带来挑战",
                 "试传祺旗舰GS8：想当最强自主SUV"};

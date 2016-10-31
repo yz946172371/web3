@@ -14,7 +14,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>News</RootNamespace>
-    <AssemblyName>News</AssemblyName>
+    <AssemblyName>Newsabc</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -274,6 +274,7 @@
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\AddArticle.cshtml" />
     <Content Include="Views\Blog\Show.cshtml" />
+    <Content Include="Views\Blog\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
