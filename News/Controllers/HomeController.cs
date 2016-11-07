@@ -44,10 +44,10 @@ namespace News.Controllers
         /// <returns></returns>
         public ActionResult List(int page=10)
         {
-            string[] data= new string[] { "台风逼近广西景区关闭学校停课",
-                "广西每年入境游客超300万" ,
-                "空军招飞初选10月24日开始",
-                "柳州城市轨道交通勘探工作已展开"};
+            string[] data= new string[] { "NBA-詹皇里程碑之夜骑士胜奇才",
+                "科比自曝仍坚持凌晨4点起床" ,
+                "追梦:没有球队能给我们带来挑战",
+                "试传祺旗舰GS8：想当最强自主SUV"};
 
             ViewBag.data = data;
             ViewBag.Page = page;
